@@ -171,5 +171,6 @@ Em caso de dúvidas, entre em contato com o líder da equipe ou consulte a docum
 - ✅ Use mensagens de commit claras e descritivas
 - ✅ Mantenha sua branch atualizada com a main
 - ✅ Faça commits pequenos e frequentes
+- ⚠️ Evite commits muito grandes; prefira dividir em partes menores
 - ❌ Nunca trabalhe diretamente na branch main
 - ❌ Não faça commits com arquivos quebrados

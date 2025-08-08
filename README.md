@@ -1,8 +1,17 @@
-# Protótipo Front-End - Agro Prati
+# Protótipo Front-End - AgroPrati
 
 ## 📋 Instruções para Desenvolvimento
 
-Este repositório contém o protótipo front-end do projeto Agro Prati. Siga as instruções abaixo para configurar seu ambiente de desenvolvimento e contribuir com o projeto.
+Este repositório contém o protótipo front-end da plataforma AgroPrati. Este README fornece instruções técnicas para a equipe de desenvolvimento.
+
+## � Configuração do Ambiente
+
+### Pré-requisitos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Editor de código (VS Code recomendado)
+- Servidor HTTP local (opcional, mas recomendado)
+
+### Estrutura do Projeto
 
 ## 🚀 Primeiros Passos
 

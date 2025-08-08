@@ -4,18 +4,324 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AgroPrati - Soluções Inteligentes para o Agronegócio</title>
 </head>
 <body>
-    <header>
-        <h1>Header</h1>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>AgroPrati</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                    <li><a href="#parceiros" class="nav-link">Parceiros</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-        <p>Conteudo Principal do Site</p>
-    </main>
-    <footer>
-        <p>Footer</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforme sua Agricultura com <span class="highlight">Inteligência Artificial</span></h1>
+                <p class="hero-description">
+                    A AgroPrati é a primeira plataforma que conecta agricultores a soluções inteligentes através de IA. 
+                    Obtenha orientações especializadas sobre plantio, manejo e conecte-se com os melhores parceiros do agronegócio.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5.000+</span>
+                        <span class="stat-label">Agricultores Ativos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Parceiros Especializados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Suporte Disponível</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="abrirChat()">
+                        <i class="fas fa-robot"></i>
+                        Conversar com IA Agrícola
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('sobre')">
+                        <i class="fas fa-info-circle"></i>
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/colheitadeiras-campo.jpeg" alt="Agricultura moderna">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a AgroPrati</h2>
+                <p class="section-subtitle">Revolucionando o agronegócio com tecnologia de ponta</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h3>Nossa Missão</h3>
+                    <p>
+                        Democratizar o acesso ao conhecimento agrícola através da inteligência artificial, 
+                        conectando produtores rurais a soluções eficientes e parceiros qualificados.
+                    </p>
+                    <h3>Nossa Visão</h3>
+                    <p>
+                        Ser a principal plataforma de soluções inteligentes para o agronegócio, 
+                        transformando a agricultura através da tecnologia.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>1000+</h4>
+                            <span>Agricultores Atendidos</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <span>Parceiros Cadastrados</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>24/7</h4>
+                            <span>Suporte Disponível</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossas Soluções</h2>
+                <p class="section-subtitle">Tecnologia a serviço da agricultura inteligente</p>
+            </div>
+            <div class="solucoes-grid">
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Chatbot Inteligente</h3>
+                    <p>IA especializada que responde dúvidas sobre plantio, manejo, pragas e doenças 24 horas por dia.</p>
+                    <ul>
+                        <li>Orientações de cultivo</li>
+                        <li>Diagnóstico de problemas</li>
+                        <li>Cronogramas de plantio</li>
+                        <li>Dicas de manejo</li>
+                    </ul>
+                </div>
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Rede de Profissionais</h3>
+                    <p>Conectamos você aos melhores profissionais do agronegócio na sua região.</p>
+                    <ul>
+                        <li>Engenheiros agrônomos</li>
+                        <li>Técnicos especializados</li>
+                        <li>Consultores agrícolas</li>
+                        <li>Veterinários</li>
+                    </ul>
+                </div>
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Marketplace Integrado</h3>
+                    <p>Acesso direto a fornecedores confiáveis de insumos, medicamentos e equipamentos.</p>
+                    <ul>
+                        <li>Defensivos agrícolas</li>
+                        <li>Fertilizantes</li>
+                        <li>Sementes certificadas</li>
+                        <li>Equipamentos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros Section -->
+    <section id="parceiros" class="parceiros">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Parceiros</h2>
+                <p class="section-subtitle">Trabalhamos com os melhores do mercado</p>
+            </div>
+            <div class="parceiros-content">
+                <div class="parceiro-categoria">
+                    <h3><i class="fas fa-flask"></i> Fornecedores de Insumos</h3>
+                    <p>Empresas especializadas em defensivos, fertilizantes e sementes certificadas.</p>
+                </div>
+                <div class="parceiro-categoria">
+                    <h3><i class="fas fa-tools"></i> Equipamentos Agrícolas</h3>
+                    <p>Distribuidores de máquinas, implementos e tecnologias para o campo.</p>
+                </div>
+                <div class="parceiro-categoria">
+                    <h3><i class="fas fa-graduation-cap"></i> Profissionais Técnicos</h3>
+                    <p>Rede qualificada de agrônomos, técnicos e consultores especializados.</p>
+                </div>
+            </div>
+            <div class="cta-parceiro">
+                <h3>Seja nosso parceiro</h3>
+                <p>Faça parte da maior rede de soluções agrícolas do país</p>
+                <button class="btn btn-primary">Cadastre-se como Parceiro</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos aqui para ajudar você</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@agroprati.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <input type="tel" placeholder="Seu telefone">
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>AgroPrati</span>
+                    </div>
+                    <p>Revolucionando o agronegócio com inteligência artificial e tecnologia de ponta.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Tutoriais</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Receba novidades e dicas agrícolas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AgroPrati. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>AgroBot</span>
+            </div>
+            <button class="chatbot-close" onclick="fecharChat()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    Olá! Eu sou o AgroBot, seu assistente agrícola inteligente. Como posso ajudá-lo hoje?
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input-field" placeholder="Digite sua pergunta sobre agricultura...">
+            <button onclick="enviarMensagem()" id="send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div class="chatbot-suggestions">
+            <button class="suggestion-btn" onclick="enviarSugestao('Como plantar milho?')">Como plantar milho?</button>
+            <button class="suggestion-btn" onclick="enviarSugestao('Pragas na soja')">Pragas na soja</button>
+            <button class="suggestion-btn" onclick="enviarSugestao('Irrigação eficiente')">Irrigação eficiente</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
